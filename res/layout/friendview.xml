@@ -1,0 +1,52 @@
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:id="@+id/friendview_rly"
+    android:background="@drawable/frienbak"
+    >
+
+                <LinearLayout
+                    android:id="@+id/friend_ly_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/search_bar_bg"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/friend_edit_search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="0.47"
+                        android:background="@drawable/edit_login"
+                        android:hint="搜索好友(输入姓名)"
+                        android:inputType="text"
+                        android:maxLength="12" />
+
+                    <Button
+                        android:id="@+id/friend_btn_sear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="搜索" />
+                </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/friend_lyout"
+        android:layout_below="@id/friend_ly_search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/acm_bg_diaglog"
+        
+        >
+	<ListView android:id="@+id/listss"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content">
+	    
+	</ListView>
+	</LinearLayout>
+	
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">生日对对碰</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="strInputAccHint">输入学号</string>
+    <string name="strAccInputLabel">学号</string>
+    <string name="strPswInputLabel">密码</string>
+    <string name="opt_remember">    记住密码</string>
+    <string name="login">登 录</string>
+    <string name="opt_hideLogin">隐身登录</string>
+    <string name="opt_silent">静音登录</string>
+    <string name="opt_openVibra">开启振动</string>
+    <string name="opt_acceptGroupMsg">接收群消息</string>
+     <string name="reg_name">姓名</string>
+       <string name="reg_ok">注册</string>
+         <string name="reg_cancel">取消</string>
+          <string name="reg_phone">手机</string>
+            <string name="reg_qq">QQ</string>
+      <string name="reg_mail">邮箱</string>
+      <string name="strInputpwdHint">输入密码</string>
+      <string name="strInputconfirmpwdHint">再次输入密码</string>
+            <string name="strInputqqHint">输入QQ</string>
+              <string name="strInputphoneHint">输入手机号</string>
+                <string name="strInputmailHint">输入邮箱</string>
+                 <string name="strInputnameHint">输入姓名</string>
+                  <string name="strInputnicknameHint">输入昵称</string>
+                  <string name="strInputbirthnameHint">如是阴历输入对应的阳历日期</string>
+                    <string name="reg_nickname">昵称</string>
+                  <string name="reg_birth">生日</string>
+                     <string name="reg">注册</string>
+                     <string name="deptno">学院</string>
+                     <string name="reg_female">妹纸</string>
+                      <string name="reg_male">汉纸</string>
+                      <string name = "reg_sex">性别</string>
+                       <string name = "reg_sunday">过阳历生日</string>
+                       <string name = "reg_moonday">过阴历生日</string>
+                       <string name="main_btfriend">碰一碰</string>
+                         <string name="main_optin">设置</string>
+                       
+
+</resources>

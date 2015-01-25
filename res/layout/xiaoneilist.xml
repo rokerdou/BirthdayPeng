@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/xiaonei_lv" >
+    <TextView android:id="@+id/xiaonei_tv_msg"
+        android:layout_width="fill_parent"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingTop="6dp"
+        
+        android:paddingBottom="2dp"
+        android:text="测试数据了拉了拉了啦啦啦啦啦啦啦啦啦积分多少级的方式可"
+        android:layout_height="wrap_content"/>
+    <RelativeLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView android:id="@+id/xiaonei_tv_time"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:text="08-10 12:00"
+            android:paddingRight="10dp"
+            android:layout_height="wrap_content"/>
+        <TextView android:id="@+id/xiaonei_tv_nicknmae"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="溯源"
+            android:paddingRight="16dp"
+            
+            android:layout_alignTop="@+id/xiaonei_tv_time"
+            
+            android:layout_toLeftOf="@+id/xiaonei_tv_time"
+            
+            
+            />
+    </RelativeLayout>
+    
+
+</LinearLayout>

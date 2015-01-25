@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.iolove.birthdaybar"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="18" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+<uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+         > 
+        <activity
+            android:name="cn.iolove.birthdaybar.LoginView"
+            android:label="@string/app_name"
+      
+            android:launchMode="singleTask"
+             >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+         <activity android:name="cn.iolove.birthdaybar.RegView"
+            android:label="注册用户">
+            
+        </activity>
+                
+        <activity android:name="cn.iolove.birthdaybar.Main"
+                    android:theme="@style/titlestyle"
+            android:label="主界面">
+            
+        </activity>
+        <activity android:name="cn.iolove.birthdaybar.FriendListView"
+                    android:theme="@style/titlestyle"
+            android:label="主界面">
+            
+        </activity>
+          
+                
+        <activity android:name="cn.iolove.birthdaybar.MyInformation"
+                    android:theme="@style/titlestyle"
+            android:label="我的资料">
+            
+        </activity>
+          <activity android:name="cn.iolove.birthdaybar.MessageView"
+                        android:theme="@style/titlestyle"
+            android:label="我的资料">
+            
+        </activity>
+     
+        <activity android:name="cn.iolove.birthdaybar.FriendView"
+                  android:theme="@style/titlestyle"
+            android:label="我的资料">
+            
+        </activity>
+        <activity 
+            android:name="cn.iolove.birthdaybar.Aboutus"
+              android:theme="@style/titlestyle"
+            ></activity>
+       <activity 
+            android:name="cn.iolove.birthdaybar.XiaoneiView"
+              android:theme="@style/titlestyle"
+            ></activity>
+              <activity 
+            android:name="cn.iolove.birthdaybar.Myinfo"
+             android:theme="@style/titlestyle"
+           
+            ></activity>
+                     <activity 
+            android:name="cn.iolove.birthdaybar.paihangView"
+              android:theme="@style/titlestyle"
+            ></activity>
+       
+  
+    </application>
+
+
+ 
+</manifest>

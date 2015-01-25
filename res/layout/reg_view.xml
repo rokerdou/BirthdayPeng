@@ -1,0 +1,378 @@
+               
+              <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none">
+
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/reg_layout"
+    android:background="@drawable/bak"
+
+     >
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:layout_gravity="center_vertical"
+        android:alpha="110"
+ 
+        >
+
+      
+
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15.0px"
+
+            
+            android:id="@+id/reg_relayout"
+           
+            android:background="@drawable/acm_bg_diaglog"
+            android:paddingBottom="10.0px"
+            android:alpha="120"
+            android:scrollbars="vertical"
+          
+            android:layout_gravity="center"
+           >
+          
+
+            <EditText
+                android:id="@+id/reg_edit_userid"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="5.0px"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:layout_marginTop="5.0dip"
+                android:paddingLeft="45.0sp"
+                android:background="@drawable/edit_login"
+                android:hint="@string/strInputAccHint"
+                android:inputType="number"
+                android:maxLength="11"              
+               android:saveEnabled="true" />
+           	 <CheckBox android:textSize="16.0sp" android:textColor="#ff222222"
+				android:id="@+id/reg_permission_userid" android:paddingLeft="25.0px"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:checked="true" android:button="@drawable/btn_check"
+				android:layout_alignBaseline="@+id/reg_edit_userid" 
+				android:layout_alignBottom="@+id/reg_edit_userid"
+				android:layout_alignRight="@+id/reg_edit_userid"
+				android:layout_alignTop="@+id/reg_edit_userid"/>
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/reg_edit_userid"
+                android:layout_alignLeft="@+id/reg_edit_userid"
+                android:layout_alignTop="@+id/reg_edit_userid"
+                android:layout_marginRight="15.0sp"
+                android:gravity="center_vertical"
+                android:paddingLeft="7.0sp"
+                android:text="@string/strAccInputLabel"
+                android:textColor="#ff3f3f3f"
+                android:textSize="16.0dip" />
+            
+            
+            <EditText
+                android:id="@+id/reg_edit_nickname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+               
+                android:layout_marginBottom="5.0px"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:layout_marginTop="5.0dip"
+                android:paddingLeft="45.0sp"
+                android:layout_below="@+id/reg_edit_userid"
+                
+                android:background="@drawable/edit_login"
+                android:hint="@string/strInputnicknameHint"
+              
+                android:maxLength="10"              
+               android:saveEnabled="true" />
+
+            <TextView
+                android:id="@+id/TextView11"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/reg_edit_nickname"
+                android:layout_alignLeft="@+id/reg_edit_nickname"
+                android:layout_alignTop="@+id/reg_edit_nickname"
+                android:layout_marginRight="15.0sp"
+                android:gravity="center_vertical"
+                android:paddingLeft="7.0sp"
+                android:text="@string/reg_nickname"
+                android:textColor="#ff3f3f3f"
+                android:textSize="16.0dip" />
+            <EditText android:id="@+id/reg_edit_pwd"
+				android:background="@drawable/edit_login" android:paddingLeft="45.0sp"
+				android:saveEnabled="true" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_marginRight="1.0dip"
+				android:maxLength="16" 
+				android:layout_below="@+id/reg_edit_nickname"
+				android:inputType="textPassword" />
+
+			<TextView android:textSize="16.0dip" android:textColor="#ff3f3f3f"
+				android:gravity="center_vertical" android:id="@+id/TextView02"
+				android:paddingLeft="7.0sp" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/strPswInputLabel"
+                android:layout_alignBottom="@+id/reg_edit_pwd"
+                android:layout_alignLeft="@+id/reg_edit_pwd"
+                android:layout_alignTop="@+id/reg_edit_pwd"/>
+			<EditText android:id="@+id/reg_edit_confirmpwd"
+				android:background="@drawable/edit_login" android:paddingLeft="45.0sp"
+				android:saveEnabled="true" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_marginRight="1.0dip"
+				android:maxLength="16" 
+				android:hint="@string/strInputconfirmpwdHint"
+				android:layout_below="@+id/reg_edit_pwd"
+				android:inputType="textPassword" />
+
+			<TextView android:textSize="16.0dip" android:textColor="#ff3f3f3f"
+				android:gravity="center_vertical" android:id="@+id/TextView03"
+				android:paddingLeft="7.0sp" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/strPswInputLabel"
+                android:layout_alignBottom="@+id/reg_edit_confirmpwd"
+                android:layout_alignLeft="@+id/reg_edit_confirmpwd"
+                android:layout_alignTop="@+id/reg_edit_confirmpwd"/>
+			
+			
+			
+			
+			<EditText
+                android:id="@+id/reg_edit_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/reg_edit_confirmpwd"
+                
+
+                android:paddingLeft="45.0sp"
+                android:background="@drawable/edit_login"
+                android:hint="@string/strInputnameHint"
+              
+                android:maxLength="10"
+                
+                
+                android:saveEnabled="true" />
+			   <CheckBox android:textSize="16.0sp" android:textColor="#ff222222"
+				android:id="@+id/reg_permission_name" android:paddingLeft="25.0px"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:checked="true" android:button="@drawable/btn_check"
+				 android:layout_alignBaseline="@+id/reg_edit_name" 
+				    android:layout_alignBottom="@+id/reg_edit_name"
+				    android:layout_alignRight="@+id/reg_edit_name"
+				         android:layout_alignTop="@+id/reg_edit_name"/>
+            <TextView
+                android:id="@+id/TextView04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/reg_edit_name"
+                android:layout_alignLeft="@+id/reg_edit_name"
+                android:layout_alignTop="@+id/reg_edit_name"
+                android:layout_marginRight="15.0sp"
+                android:gravity="center_vertical"
+                android:paddingLeft="7.0sp"
+                android:text="@string/reg_name"
+                android:textColor="#ff3f3f3f"
+                android:textSize="16.0dip" />
+                <TextView
+                android:id="@+id/TextView1211"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:layout_alignBaseline="@+id/reg_checkbox_Sexmale" 
+                 android:layout_marginLeft="0dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="7.0sp"
+                android:text="@string/reg_sex"
+                android:textColor="#ff3f3f3f"
+                android:textSize="16.0dip" />
+   
+                 <TextView
+                android:id="@+id/TextView121"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:layout_alignBaseline="@+id/reg_checkbox_Sexmale" 
+                 android:layout_marginLeft="50dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="7.0sp"
+                android:text="@string/reg_male"
+                android:textColor="#ff3f3f3f"
+                android:textSize="16.0dip" />
+            <CheckBox android:textSize="16.0sp" android:textColor="#ff222222"
+				android:id="@+id/reg_checkbox_Sexmale" android:paddingLeft="25.0px"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				 android:button="@drawable/btn_check"
+				 android:layout_marginLeft="100dip"
+				
+				android:layout_below="@+id/reg_edit_name"
+				/>
+
+                 <TextView
+                android:id="@+id/TextView121"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:layout_alignBaseline="@+id/reg_checkbox_Sexmale" 
+                 android:layout_marginLeft="210dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="7.0sp"
+                android:text="@string/reg_female"
+                android:textColor="#ff3f3f3f"
+                android:textSize="16.0dip" />
+            <CheckBox android:textSize="16.0sp" android:textColor="#ff222222"
+				android:id="@+id/reg_checkbox_sexfemale" 
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:button="@drawable/btn_check"
+				android:layout_marginLeft="250dip"
+				 android:layout_alignBaseline="@+id/reg_checkbox_Sexmale" 
+				    android:layout_alignBottom="@+id/reg_checkbox_Sexmale"
+				  
+				         android:layout_alignTop="@+id/reg_checkbox_Sexmale"/>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+ 
+            
+            
+            
+
+   
+                 <TextView
+                android:id="@+id/TextView221"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:layout_alignBaseline="@+id/reg_checkbox_sunday" 
+                 android:layout_marginLeft="20dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="7.0sp"
+                android:text="@string/reg_sunday"
+                android:textColor="#ff3f3f3f"
+                android:textSize="16.0dip" />
+            <CheckBox android:textSize="16.0sp" android:textColor="#ff222222"
+				android:id="@+id/reg_checkbox_sunday" android:paddingLeft="25.0px"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				 android:button="@drawable/btn_check"
+				 android:layout_marginLeft="100dip"
+				
+				android:layout_below="@+id/reg_checkbox_sexfemale"
+				/>
+
+                 <TextView
+                android:id="@+id/TextView221"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:layout_alignBaseline="@+id/reg_checkbox_sunday" 
+                 android:layout_marginLeft="170dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="7.0sp"
+                android:text="@string/reg_moonday"
+                android:textColor="#ff3f3f3f"
+                android:textSize="16.0dip" />
+            <CheckBox android:textSize="16.0sp" android:textColor="#ff222222"
+				android:id="@+id/reg_checkbox_moonday" 
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:button="@drawable/btn_check"
+				android:layout_marginLeft="250dip"
+				 android:layout_alignBaseline="@+id/reg_checkbox_sunday" 
+				    android:layout_alignBottom="@+id/reg_checkbox_sunday"
+				  
+				         android:layout_alignTop="@+id/reg_checkbox_sunday"/>
+  
+            
+         <Spinner    
+        android:id="@+id/reg_spinner_dep"    
+        android:layout_width="fill_parent"    
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reg_checkbox_sunday"
+        android:paddingLeft="45.0sp"
+        
+        >    
+        </Spinner><!-- 定义一个下拉菜单-->    
+        
+            <TextView
+                android:id="@+id/TextView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/reg_spinner_dep"
+                android:layout_alignLeft="@+id/reg_spinner_dep"
+                android:layout_alignTop="@+id/reg_spinner_dep"
+                android:layout_marginRight="15.0sp"
+                android:gravity="center_vertical"
+                android:paddingLeft="7sp"
+               
+                android:text="@string/deptno"
+                android:textColor="#ff3f3f3f"
+                android:textSize="16.0dip" />
+
+            
+        
+            
+            
+          <EditText
+                android:id="@+id/reg_edit_birthday"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/reg_spinner_dep"
+                
+
+                android:paddingLeft="45.0sp"
+                android:background="@drawable/edit_login"
+                android:hint=""
+                
+                android:maxLength="30"         
+                android:saveEnabled="true" />
+
+            <TextView
+                android:id="@+id/TextView08"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/reg_edit_birthday"
+                android:layout_alignLeft="@+id/reg_edit_birthday"
+                android:layout_alignTop="@+id/reg_edit_birthday"
+                android:layout_marginRight="15.0sp"
+                android:gravity="center_vertical"
+                android:paddingLeft="7.0sp"
+                android:text="@string/reg_birth"
+                android:textColor="#ff3f3f3f"
+                android:textSize="16.0dip" />
+            
+           	<Button android:id="@+id/reg_btn_ok" android:layout_width="230.0px"
+				android:layout_height="82.0px" android:layout_marginTop="7.0px"
+				android:layout_marginRight="12.0dip" android:text="@string/reg_ok"
+				android:layout_below="@+id/TextView08"
+			
+				 />
+                    	<Button android:id="@+id/reg_btn_cancel" android:layout_width="230.0px"
+				android:layout_height="82.0px" android:layout_marginTop="7.0px"
+				android:layout_marginRight="12.0dip" android:text="@string/reg_cancel"
+				android:layout_below="@+id/TextView08"
+				android:layout_toRightOf="@id/reg_btn_ok"
+				android:layout_alignParentRight="true"			
+				 />
+             
+
+        </RelativeLayout>
+
+     
+    </LinearLayout>
+  
+
+  
+
+</LinearLayout>
+ </ScrollView>

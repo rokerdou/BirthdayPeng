@@ -1,0 +1,62 @@
+<LinearLayout android:orientation="vertical"
+     xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+
+    android:background="@drawable/paihangbak"
+     >
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:layout_weight="1">
+        <TextView android:text="得到香蕉排行榜"
+        android:id="@+id/paihang_tv_xjtitle"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:paddingLeft="14dp"
+        android:layout_height="wrap_content"/>
+         <ListView
+        android:id="@+id/paihang_lv_xiangjiao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="30dp"
+         >
+         </ListView>
+        
+        
+    </LinearLayout>
+     <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+       <TextView android:text="捡香皂数排行榜"
+        android:id="@+id/paihang_tv_fztitle"
+         android:paddingLeft="14dp"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"/>
+        <ListView android:id="@+id/paihang_lv_fzao"
+        android:layout_width="match_parent"      
+          android:paddingBottom="30dp"
+        android:layout_height="wrap_content">
+        
+    </ListView>
+    </LinearLayout>
+    
+	</LinearLayout>
+	
+
+
+	
+
+
+
+	
+</LinearLayout>

@@ -1,0 +1,157 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/mainbak"
+    android:id="@+id/main_rlayout">
+    <TextView android:id="@+id/main_text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="公告"
+        android:paddingTop="10dp"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        
+        />
+    <LinearLayout android:id="@+id/main_ggly"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_text_title"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/acm_bg_diaglog">
+        <TextView android:id="@+id/main_title_gonggao"
+            android:layout_width="fill_parent"
+            android:text="      欢迎大家使用生日对对碰的飞机快乐的方式即可拉风的说了算的封口费的数据"
+            android:paddingLeft="20dp"
+            android:paddingRight="6dp"
+            android:paddingTop="4dp"
+            android:layout_height="wrap_content"/>
+       	  <TextView android:id="@+id/main_title_usergonggao"
+            android:layout_width="fill_parent"
+            android:text="***同学注意"
+            android:paddingLeft="20dp"
+            android:paddingTop="4dp"
+            android:paddingRight="6dp"
+            android:layout_height="wrap_content"/>
+        
+    </LinearLayout>
+
+    
+
+
+        
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+       android:layout_below="@+id/main_ggly"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:id="@+id/main_ly"
+        android:background="@drawable/acm_bg_diaglog"
+        android:alpha="120"
+        >
+        
+        
+         <RelativeLayout
+            			android:layout_width="fill_parent"
+            			android:layout_height="wrap_content"
+            			android:layout_marginTop="14dp"
+            			android:gravity="center_vertical"
+            			android:id="@+id/main_rl_peng"
+            			android:clickable="true"
+            			android:alpha="100"
+            			android:background="@drawable/preference_first_item" >
+            			<TextView
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"
+        					android:padding="8dp" 
+        					android:id="@+id/main_tv_peng"
+        					android:text="碰一碰:查到和你同一天生日的人"
+        					android:textSize="17sp"		
+							android:textColor="#000" />
+					
+      </RelativeLayout>
+      	       				<RelativeLayout
+       				    android:id="@+id/main_rl_xiaonei"
+       				    android:layout_below="@+id/main_rl_peng"
+            			android:layout_width="fill_parent"
+            			android:layout_height="wrap_content"
+            			android:gravity="center_vertical"
+            			android:clickable="true"
+            			android:background="@drawable/preference_item" >
+            			<TextView
+            			    android:id="@+id/main_tv_xiaonei"
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"
+        					android:padding="8dp" 
+        					android:text="校内事:发布校内事给全校所有人"
+        					android:textSize="17sp"		
+							android:textColor="#000" />      
+							
+      				</RelativeLayout>
+      		      	       				<RelativeLayout
+       				    android:id="@+id/main_rl_getmsg"
+       				    android:layout_below="@+id/main_rl_xiaonei"
+            			android:layout_width="fill_parent"
+            			android:layout_height="wrap_content"
+            			android:gravity="center_vertical"
+            			android:clickable="true"
+            			android:background="@drawable/preference_item" >
+            			<TextView
+            			    android:id="@+id/main_tv_getmsg"
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"
+        					android:padding="8dp" 
+        					android:text="收信箱:接收好友发来的新消息"
+        					android:textSize="17sp"		
+							android:textColor="#000" />      
+							
+      				</RelativeLayout>
+      				
+      		      	       				
+      		      	   <RelativeLayout
+       				    android:id="@+id/main_rl_paihang"
+       				    android:layout_below="@+id/main_rl_getmsg"
+            			android:layout_width="fill_parent"
+            			android:layout_height="wrap_content"
+            			android:gravity="center_vertical"
+            			android:clickable="true"
+            			android:background="@drawable/preference_item" >
+            			<TextView
+            			    android:id="@+id/main_tv_paihang"
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"
+        					android:padding="8dp" 
+        					android:text="排行榜:快来看谁的香皂香蕉最多"
+        					android:textSize="17sp"		
+							android:textColor="#000" />      
+							
+      				</RelativeLayout>
+      				            		<RelativeLayout
+            			android:layout_width="fill_parent"
+            			android:layout_height="wrap_content"
+            			android:gravity="center_vertical"
+            			android:id="@+id/main_rl_info"
+            			 android:layout_below="@+id/main_rl_paihang"
+            			android:clickable="true"
+            			android:background="@drawable/preference_last_item" >
+            			<TextView
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"
+        					android:padding="8dp" 
+        					android:text="个人信息:查看修改个人信息"
+        						android:id="@+id/main_tv_info"
+        					android:textSize="17sp"		
+							android:textColor="#000" /> 
+ 					
+      				</RelativeLayout>
+            			
+        
+        
+        
+        
+
+        
+    </RelativeLayout>
+
+</RelativeLayout>

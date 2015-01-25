@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/info_bak" 
+    >
+    <RelativeLayout 
+       
+        android:id="@+id/myinformation_ly"
+        android:gravity="center_vertical"
+        android:layout_centerInParent="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/acm_bg_diaglog"
+        >
+                
+         <RelativeLayout
+            			android:layout_width="fill_parent"
+            			android:layout_height="wrap_content"
+            			android:layout_marginTop="14dp"
+            			android:gravity="center_vertical"
+            			android:id="@+id/myinformation_useridly"
+            			android:clickable="true"
+            			android:alpha="100"
+            			android:background="@drawable/preference_first_item" >
+            			<TextView
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"
+        					android:padding="8dp" 
+        					android:id="@+id/myinfo_tv_userid"
+        					android:text="学号"
+        					android:textSize="17sp"		
+							android:textColor="#000" />
+					
+      </RelativeLayout>
+        <RelativeLayout
+            			android:layout_width="fill_parent"
+            			android:layout_height="wrap_content"
+            			 android:layout_below="@id/myinformation_useridly"
+            			android:gravity="center_vertical"
+            			android:id="@+id/myinformation_textly"
+            			android:clickable="true"
+            			android:alpha="100"
+            			android:background="@drawable/preference_item" >
+            			<TextView
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"
+        					android:padding="8dp" 
+        					android:id="@+id/myinfo_name"
+        					android:text="姓名:"
+        					android:textSize="17sp"		
+							android:textColor="#000" />
+					
+      </RelativeLayout>
+
+      		       				<RelativeLayout
+       				    android:id="@+id/myinfo_nicknamely"
+       				    android:layout_below="@id/myinformation_textly"
+            			android:layout_width="fill_parent"
+            			android:layout_height="wrap_content"
+            			android:gravity="center_vertical"
+            			android:clickable="true"
+            			android:background="@drawable/preference_item" >
+            			<TextView
+            			    android:id="@+id/myinfo_nickname"
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"
+        					android:padding="8dp" 
+        					android:text="昵称"
+        					android:textSize="17sp"		
+							android:textColor="#000" />      
+							
+      				</RelativeLayout>
+      			      	<RelativeLayout
+       				    android:id="@+id/myinfo_deptnoly"
+       				    android:layout_below="@+id/myinfo_nicknamely"
+            			android:layout_width="fill_parent"
+            			android:layout_height="wrap_content"
+            			android:gravity="center_vertical"
+            			android:clickable="true"
+            			android:background="@drawable/preference_item" >
+            			<TextView
+            			    android:id="@+id/myinfo_deptno"
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"
+        					android:padding="8dp" 
+        					android:text="学院"
+        					android:textSize="17sp"		
+							android:textColor="#000" />      				
+      				</RelativeLayout>
+           			 <RelativeLayout
+       				    android:id="@+id/myinfo_sexly"
+       				    android:layout_below="@+id/myinfo_deptnoly"
+            			android:layout_width="fill_parent"
+            			android:layout_height="wrap_content"
+            			android:gravity="center_vertical"
+            			android:clickable="true"
+            			android:background="@drawable/preference_item" >
+            			<TextView
+            			    android:id="@+id/myinfo_sex"
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"
+        					android:padding="8dp" 
+        					android:text="性别:"
+        					android:textSize="17sp"		
+							android:textColor="#000" />      				
+      				</RelativeLayout>
+      	            <RelativeLayout
+       				    android:id="@+id/myinfo_birthdayly"
+       				    android:layout_below="@+id/myinfo_sexly"
+            			android:layout_width="fill_parent"
+            			android:layout_height="wrap_content"
+            			android:gravity="center_vertical"
+            			android:clickable="true"
+            			android:background="@drawable/preference_item" >
+            			<TextView
+            			    android:id="@+id/myinfo_birthday"
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"
+        					android:padding="8dp" 
+        					android:text="生日:"
+        					android:textSize="17sp"		
+							android:textColor="#000" />      				
+      				</RelativeLayout>
+            		<RelativeLayout
+            			android:layout_width="fill_parent"
+            			android:layout_height="wrap_content"
+            			android:gravity="center_vertical"
+            			android:id="@+id/myinfo_phonely"
+            			 android:layout_below="@+id/myinfo_birthdayly"
+            			android:clickable="true"
+            			android:background="@drawable/preference_last_item" >
+            			<TextView
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"
+        					android:padding="8dp" 
+        					android:text="手机号"
+        						android:id="@+id/myinfo_phone"
+        					android:textSize="17sp"		
+							android:textColor="#000" /> 
+ 					
+      				</RelativeLayout>
+
+				 		 <Button 
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:id="@+id/myinfo_givexiangjiao"
+				        android:text="送香蕉"
+				        android:layout_below="@id/myinfo_phonely"
+				        android:alpha="100"   
+				         android:layout_alignParentLeft="true"
+				       android:layout_marginLeft="40dp"
+				       
+				        />
+				 		 <Button 
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:id="@+id/myinfo_givefeizao"
+				        android:text="扔肥皂"
+				        android:layout_below="@id/myinfo_phonely"
+				        android:alpha="100"   
+				        android:layout_toRightOf="@id/myinfo_givexiangjiao"
+      
+				        />
+					 <Button 
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:id="@+id/myinfo_btn_addfriend"
+				        android:text="加为好友"
+				        android:layout_below="@id/myinfo_phonely"
+				        android:layout_toRightOf="@id/myinfo_givefeizao"
+				        android:alpha="100"   
+      
+				        />
+					    <RelativeLayout
+				      
+				        android:id="@+id/myinfo_rl_bottom"
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				      android:layout_below="@id/myinfo_btn_addfriend"
+				        >
+        
+				        <Button
+				        android:id="@+id/myinfo_send"
+				        android:layout_width="116dp"
+				        android:layout_height="40dp"
+				        android:layout_alignParentRight="true"
+				        android:layout_marginRight="10dp"
+				        android:layout_centerVertical="true"
+				        android:text="发送消息"
+				        />
+         			        
+				        <EditText
+				        android:id="@+id/myinfo_et_sendmessage"
+				        android:layout_width="fill_parent"
+				        android:layout_height="40dp"
+				        android:layout_toLeftOf="@id/myinfo_send"
+				        android:layout_marginLeft="10dp"
+				        android:layout_marginRight="10dp"
+				        android:layout_centerVertical="true"
+				        android:singleLine="true"
+				        android:textSize="18sp"/>
+				         
+    				</RelativeLayout>
+  
+
+        
+        
+    </RelativeLayout>
+
+    
+
+</RelativeLayout>

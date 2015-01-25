@@ -1,0 +1,180 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/info_rl"
+    android:background="@drawable/info_bak" 
+    android:alpha="100"
+    >
+    <RelativeLayout 
+       
+        android:id="@+id/info_ly"
+        android:gravity="center_vertical"
+        android:layout_centerInParent="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/acm_bg_diaglog"
+        >
+                
+         <RelativeLayout
+            			android:layout_width="fill_parent"
+            			android:layout_height="wrap_content"
+            			android:layout_marginTop="14dp"
+            			android:gravity="center_vertical"
+            			android:id="@+id/info_useridly"
+            			android:clickable="true"
+            			android:alpha="100"
+            			android:background="@drawable/preference_first_item" >
+            			<TextView
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"
+        					android:padding="8dp" 
+        					android:id="@+id/info_tv_userid"
+        					android:text="学号"
+        					android:textSize="17sp"		
+							android:textColor="#000" />
+            			
+					
+      </RelativeLayout>
+        <RelativeLayout
+            			android:layout_width="fill_parent"
+            			android:layout_height="wrap_content"
+            			 android:layout_below="@id/info_useridly"
+            			android:gravity="center_vertical"
+            			android:id="@+id/info_textly"
+            			android:clickable="true"
+            			android:alpha="100"
+            			android:background="@drawable/preference_item" >
+            			<TextView
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"
+        					android:padding="8dp" 
+        					android:id="@+id/info_tv_name"
+        					android:text="姓名:"
+        					android:textSize="17sp"		
+							android:textColor="#000" />
+					
+      </RelativeLayout>
+
+      		       				<RelativeLayout
+       				    android:id="@+id/info_nicknamely"
+       				    android:layout_below="@id/info_textly"
+            			android:layout_width="fill_parent"
+            			android:layout_height="wrap_content"
+            			android:gravity="center_vertical"
+            			android:clickable="true"
+            			android:background="@drawable/preference_item" >
+            			<TextView
+            			    android:id="@+id/info_tv_nickname"
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"
+        					android:padding="8dp" 
+        					android:text="昵称"
+        					android:textSize="17sp"		
+							android:textColor="#000" />      
+
+							
+      				</RelativeLayout>
+      			      	<RelativeLayout
+       				    android:id="@+id/info_deptnoly"
+       				    android:layout_below="@+id/info_nicknamely"
+            			android:layout_width="fill_parent"
+            			android:layout_height="wrap_content"
+            			android:gravity="center_vertical"
+            			android:clickable="true"
+            			android:background="@drawable/preference_item" >
+            			<TextView
+            			    android:id="@+id/info_tv_deptno"
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"
+        					android:padding="8dp" 
+        					android:text="学院"
+        					android:textSize="17sp"		
+							android:textColor="#000" />     
+			
+      				</RelativeLayout>
+
+      	            <RelativeLayout
+       				    android:id="@+id/info_birthdayly"
+       				    android:layout_below="@+id/info_deptnoly"
+            			android:layout_width="fill_parent"
+            			android:layout_height="wrap_content"
+            			android:gravity="center_vertical"
+            			android:clickable="true"
+            			android:background="@drawable/preference_item" >
+
+
+								
+      				</RelativeLayout>
+            		<RelativeLayout
+            			android:layout_width="fill_parent"
+            			android:layout_height="wrap_content"
+            			android:gravity="center_vertical"
+            			android:id="@+id/info_phonely"
+            			 android:layout_below="@+id/info_birthdayly"
+            			android:clickable="true"
+            			android:background="@drawable/preference_last_item" >
+            			<TextView
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"
+        					android:padding="8dp" 
+        					android:text="手机"
+        						android:id="@+id/info_tv_phone"
+        					android:textSize="17sp"		
+							android:textColor="#000" /> 
+					<EditText android:layout_width="fill_parent"
+							 android:layout_height="wrap_content"
+							    android:id="@+id/info_et_phone"
+							    android:hint="输入手机号"
+							    android:inputType="number"
+							    android:layout_toRightOf="@+id/info_tv_phone"
+							    android:text=""/>
+
+ 					
+      				</RelativeLayout>
+             		<RelativeLayout
+            			android:layout_width="fill_parent"
+            			android:layout_height="wrap_content"
+            			android:gravity="center_vertical"
+            			android:id="@+id/info_birth"
+            			 android:layout_below="@+id/info_deptnoly"
+            			android:clickable="true"
+            			android:background="@drawable/preference_item" >
+            			<TextView
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"
+        					android:padding="8dp" 
+        					android:text="生日"
+        						android:id="@+id/info_tv_birth"
+        					android:textSize="17sp"		
+							android:textColor="#000" /> 
+						
+      				</RelativeLayout>
+      			<Button android:layout_width="wrap_content"
+      				    android:layout_height="wrap_content"
+      				    android:text="提交手机号"
+      				    android:id="@+id/info_ok"
+      	
+      				    
+      				    android:layout_below="@+id/info_phonely"
+      				   android:layout_marginLeft="40dp"/>
+				<Button android:layout_width="wrap_content"
+      				    android:layout_height="wrap_content"
+      				    android:text="删除账户"
+      				    android:id="@+id/info_delete"
+      				    android:layout_below="@+id/info_phonely"
+      				   android:layout_marginLeft="200dp"/>
+      	
+
+
+				       
+
+
+
+        
+        
+    </RelativeLayout>
+
+    
+
+</RelativeLayout>
